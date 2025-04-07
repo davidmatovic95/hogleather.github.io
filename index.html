@@ -1,118 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	
-	<title>CSS</title>
-	<link rel="stylesheet" type="text/css" href="CSS fajl.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hog Leather</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body onload="onTop()">
+<body>
+  <header>
+    <div class="container">
+      <h1>Hog Leather</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<div id="nav" class="wapper">
-	<nav class="zone green">
-		<ul class="main-nav">
-			<li><a href="">About</a></li>
-			<li><a href="https://www.instagram.com/hog_leathergoods/">Instagram</a></li>
-			<li><a href="https://www.facebook.com/HOGLeathergoods">Facebook</a></li>
-			<li onclick="myFunction('products')">Products</li>
-			<li onclick="myFunction('contact')" class="push">Contact Us</li>
-		</ul>
-	</nav>
-</div>
+  <section class="hero">
+    <div class="container">
+      <h2>Premium Leather Goods</h2>
+      <p>Handcrafted. Durable. Stylish.</p>
+      <a href="#" class="btn">Explore Now</a>
+    </div>
+  </section>
 
-<div class="heading-picture">
-	<img class="product" src="slike/hog.jpg">
-</div>
+  <section class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        Hog Leather is dedicated to providing high-quality, handcrafted leather products
+        with timeless style and durability.
+      </p>
+    </div>
+  </section>
 
-<div id="products" class="container">
-	<h1>Products</h1>
-  <img class="product" src="slike/1.jpg">
-  <img class="product" src="slike/2.jpg">
-  <img class="product" src="slike/3.jpg">
-  <img class="product" src="slike/4.jpg">
-  <img class="product" src="slike/5.jpg">
-  <img class="product" src="slike/6.jpg">
-  <img class="product" src="slike/7.jpg">
-  <img class="product" src="slike/8.jpg">
-  <img class="product" src="slike/9.jpg">
-  <img class="product" src="slike/10.jpg">
-
-</div>
-
-<div id="contact" class="contact-us">
-	<h1>Contact Us</h1>
-	<div class="social-icons-wrapper">
-
-		<div class="social">
-			<a href="https://www.facebook.com/HOGLeathergoods">
-				<img src="slike/contact/facebook.png">
-				<p>HOGLeathergoods</p>
-			</a>
-		</div>
-
-		<div class="social">
-			<a href="https://www.instagram.com/hog_leathergoods/">
-				<img src="slike/contact/instagram.png">
-				<p>hog_leathergoods</p>
-			</a>
-		</div>
-
-		<div class="social">
-			<a href="#">
-				<img src="slike/contact/phone.png">
-				<p>+381648989899</p>
-			</a>
-		</div>
-
-		<div class="social">
-			<a href="#">
-				<img src="slike/contact/email.png">
-				<p>hogleadther@gmail.com</p>
-			</a>
-		</div>
-		
-	</div>
-	
-</div>
-
-<div onclick="topFunction()" id="myBtn">
-	<img src="slike/up-arrow.png">
-</div>
-
-<script>
-
-	function onTop() {
-		window.scrollTo({ top: 0, behavior: 'smooth' });
-	}
-
-	function myFunction(value) {
-		console.log('bla')
-		const element = document.getElementById(value);
-		element.scrollIntoView({behavior: "smooth"});
-	}
-
-
-	// Get the button
-	let mybutton = document.getElementById("myBtn");
-
-	// When the user scrolls down 20px from the top of the document, show the button
-	window.onscroll = function() {scrollFunction()};
-
-	function scrollFunction() {
-		if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-			mybutton.style.display = "block";
-		} else {
-			mybutton.style.display = "none";
-		}
-	}
-
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
-	}
-
-</script>
-
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Hog Leather. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
-
